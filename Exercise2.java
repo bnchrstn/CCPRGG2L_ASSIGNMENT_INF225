@@ -36,15 +36,14 @@ public class App {
 
     static String getFeedBack(String drive) {
         System.out.println("Do i pass the " + drive + " training? (Enter \"yes\" or \"no\")");
-
         String feedback = scan.next();
-
         return feedback;
     }
 
     static void reTrain(String drive) {
         System.out.print("what do you lack in training: ");
-        String need = scan.next();
+        scan.nextLine();
+        String need = scan.nextLine();
         System.out.println("You need to: " + need + " more");
     }
 
@@ -54,3 +53,4 @@ public class App {
 
     }
 }
+
