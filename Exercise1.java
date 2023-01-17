@@ -93,7 +93,7 @@ public class App {
         String password = scan.nextLine();
 
         // Provide the pattern
-        pattern = Pattern.compile("(?=.*[\\w\\d])[^ELIZR]{10,}");
+        pattern = Pattern.compile("(?=.*[\\W])[^ELIZR]{10,}");
 
         match = pattern.matcher(password);
 
