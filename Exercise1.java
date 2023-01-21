@@ -20,7 +20,7 @@ public class App {
         String website = scan.nextLine();
 
         // Provide regex pattern
-        pattern = Pattern.compile("www\\.+[a-zA-z 0-9]+\\.com");
+        pattern = Pattern.compile("www\\.+[a-zA-z]+\\.com");
 
         match = pattern.matcher(website);
 
